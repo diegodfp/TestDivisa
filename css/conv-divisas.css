@@ -1,0 +1,101 @@
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.container > h1 {
+    text-align: center;
+}
+.conversor {
+    width: 90%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 10px;
+}
+
+.titulos {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.etiquetas {
+    grid-column:1 / 2 ;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: end;
+    row-gap: 10px;
+}
+.cantidades {
+    grid-column:2 / 3 ;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+.cantidades > input {
+    width: 100%;
+}
+.divisas {
+    grid-column:3 / 4 ;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    align-items: center;
+}
+.divisas > select{
+    height: 30px;
+}
+.botonera {
+    grid-column: 3 / 4;
+    align-items: end;
+    text-align: end;
+    margin-top: 10px;
+}
+.botonera > button {
+    background-color: #0844a4;
+    margin: 0;
+    height: 100%;
+    color: #fff;
+}
+
+@media screen and (max-width:480px){
+    * {
+        font-size: 1rem;
+    }
+    .container {
+        width: 99%;
+    }
+    .conversor{
+        grid-template-columns: auto auto auto;
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+    * {
+        font-size: 1.2rem;
+    }
+    .conversor{
+        grid-template-columns: auto auto auto;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .container {
+        width: 80%;
+    }
+}
