@@ -2,6 +2,17 @@ window.addEventListener("load", (event) => {
     convertidor()
   });
 
+window.onload = function() {
+    const prueba = function() {
+        let caja1 = document.getElementById("cant-orig")
+        let caja2 = document.getElementById("cant-dest")
+
+        caja1.className += "colorearA"
+        caja2.className += "colorearB"
+    }
+    document.getElementById('cant-orig').addEventListener('keypress',prueba); 
+
+};
 async function convertidor() {
     const divorig = document.getElementById("div-orig")
     const divdes = document.getElementById("div-dest")
