@@ -10,7 +10,7 @@ window.onload = function() {
         caja1.className += "colorearA"
         caja2.className += "colorearB"
     }
-    document.getElementById('cant-orig').addEventListener('keypress',prueba); 
+    document.getElementById('cant-orig').addEventListener('input',prueba); 
 
 };
 async function convertidor() {
