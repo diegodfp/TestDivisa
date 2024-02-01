@@ -54,6 +54,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
+    align-items: center;
 }
 .divisas > select{
     height: 30px;
@@ -62,12 +63,12 @@ body {
     grid-column: 3 / 4;
     align-items: end;
     text-align: end;
-
+    margin-top: 10px;
 }
-.botonera button {
+.botonera > button {
     background-color: #0844a4;
     margin: 0;
-    padding: 0;
+    height: 100%;
     color: #fff;
 }
 
